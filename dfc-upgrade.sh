@@ -9,7 +9,7 @@ dfc_project_main_folder="."
 
 # General process
 gitDownload() {
-    git clone https://github.com/Docker-Fastest-Configs/csharp-base.git ./.temp/
+    git clone https://github.com/Duck-Fast-Configs/csharp-base.git ./.temp/
     rm -rf $dfc_project_main_folder/.temp/.git
     rm -rf $dfc_project_main_folder/.temp/WorkFolder/Containers/dfc-host-csharp/Files
     cp -a $dfc_project_main_folder/.temp/. $dfc_project_main_folder/
