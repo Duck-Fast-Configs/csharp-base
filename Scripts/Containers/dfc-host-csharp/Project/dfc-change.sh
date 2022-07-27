@@ -26,13 +26,13 @@ case $dfc_project_input_choice in
     message_info "Ожидайте..." 1
     docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "rm -rf *" >&1
     docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "rm -rf .*" >&1
-    docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "~/.dotnet/dotnet new console -n dfc-project -o ." >&1
+    docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "dotnet new console -n dfc-project -o ." >&1
     ;;
 "2")
     message_info "Ожидайте..." 1
     docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "rm -rf *" >&1
     docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "rm -rf .*" >&1
-    docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "~/.dotnet/dotnet new mvc -n dfc-project -o ." >&1
+    docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "dotnet new mvc -n dfc-project -o ." >&1
     ;;
 "3")
     message_input "Вставьте ссылку на проект из git (только https)\n"

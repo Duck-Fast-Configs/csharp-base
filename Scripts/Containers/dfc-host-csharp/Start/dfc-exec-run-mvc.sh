@@ -14,7 +14,7 @@ message_space 2
 message_info "Перейдите по адресу https://localhost, чтобы увидеть запущенный проект" 1
 message_info "Чтобы выйти -- 'Ctrl + C'" 1
 message_space_null
-docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "~/.dotnet/dotnet run --urls=https://0.0.0.0/" >&3
+docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "dotnet run --urls=https://0.0.0.0/" >&3
 message_space_null
 
 message_info "В контейнере 'dfc-host-csharp' был запущен 'mvc' проект" 1

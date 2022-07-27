@@ -11,7 +11,7 @@ dfc_project_main_folder="../../../../.."
 message_info "$(date '+%H:%M:%S (%m/%d/%y)')" 2
 message_space 2
 message_info "Перейдите по адресу https://localhost, чтобы увидеть запущенный проект" 1
-docker-compose -p $dfc_global__project_name exec -u dfc-user --detach dfc-host-csharp zsh -c "~/.dotnet/dotnet run --urls=https://0.0.0.0/" >&1
+docker-compose -p $dfc_global__project_name exec -u dfc-user --detach dfc-host-csharp zsh -c "dotnet run --urls=https://0.0.0.0/" >&1
 message_info "Чтобы остановить проект нужно использовать файл 'dfc-stop.sh'" 1
 
 message_info "В контейнере 'dfc-host-csharp' на заднем плане запущен 'mvc' проект" 1

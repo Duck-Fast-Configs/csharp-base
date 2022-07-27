@@ -13,7 +13,7 @@ message_space 2
 
 message_info "Чтобы выйти -- 'Ctrl + C'" 1
 message_space_null
-docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "~/.dotnet/dotnet run" >&3
+docker-compose -p $dfc_global__project_name exec -u dfc-user dfc-host-csharp zsh -c "dotnet run" >&3
 message_space_null
 
 message_info "В контейнере 'dfc-host-csharp' был запущен 'console' проект" 1
